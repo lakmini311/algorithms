@@ -40,7 +40,7 @@ public class ConwaysGameOfLifeAppTest {
 			System.setIn(new ByteArrayInputStream(data.getBytes()));
 			
 			ConwaysGameOfLifeApp.main(null);
-			String expectedOutput = readFile("src/test/resources/SixAliveCellsInput.txt");
+			String expectedOutput = readFile("src/test/resources/SixAliveCellsExpectedOutput.txt");
 			
 			assertEquals(expectedOutput.replaceAll("\\n|\\s", ""), output.toString().replaceAll("\\s", ""));
 			
